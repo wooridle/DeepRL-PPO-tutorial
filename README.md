@@ -3,7 +3,7 @@ This repository contains tutorial material on Doing DeepRL with PPO in GDG DevFe
 
 
 
-##Roboschool 설치 가이드
+## Roboschool 설치 가이드
 
 설치에 앞서 roboschool은 Mac과 Linux 운영체제만 지원합니다.
 
@@ -56,13 +56,13 @@ export PKG_CONFIG_PATH=$(dirname $(dirname $(which python)))/lib/pkgconfig
 그 다음은 roboschool을 돌리는데 필요한 물리엔진인 bullet3를 설치해야 합니다. 먼저 bullet3를 먼저 깃헙에서 받아와서 빌드를 해야합니다.
 
 ```
-@ git clone https://github.com/olegklimov/bullet3 -b roboschool_self_collision
-@ mkdir bullet3/build
-@ cd bullet3/build
-@ cmake -DBUILD_SHARED_LIBS=ON -DUSE_DOUBLE_PRECISION=1 _DCMAKE_INSTALL_PREFIX:PATH=$ROBOSCHOOL_PATH/roboschool/cpp-household/bullet_local_install -DBUILD_CPU_DEMOS=OFF -DBUILD_BULLET2_DEMOS=OFF -DBUILD_EXTRAS=OFF  -DBUILD_UNIT_TESTS=OFF -DBUILD_CLSOCKET=OFF -DBUILD_ENET=OFF -DBUILD_OPENGL3_DEMOS=OFF ..
-@ make -j4
-@ make install
-@ cd ../..
+git clone https://github.com/olegklimov/bullet3 -b roboschool_self_collision
+mkdir bullet3/build
+cd bullet3/build
+cmake -DBUILD_SHARED_LIBS=ON -DUSE_DOUBLE_PRECISION=1 _DCMAKE_INSTALL_PREFIX:PATH=$ROBOSCHOOL_PATH/roboschool/cpp-household/bullet_local_install -DBUILD_CPU_DEMOS=OFF -DBUILD_BULLET2_DEMOS=OFF -DBUILD_EXTRAS=OFF  -DBUILD_UNIT_TESTS=OFF -DBUILD_CLSOCKET=OFF -DBUILD_ENET=OFF -DBUILD_OPENGL3_DEMOS=OFF ..
+make -j4
+make install
+cd ../..
 ```
 
 
