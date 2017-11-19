@@ -1,7 +1,9 @@
 # DeepRL-PPO-tutorial
 This repository contains tutorial material on Doing DeepRL with PPO in GDG DevFest 2017 Seoul.
 
+## 발표자료
 
+[Doing_RL_with_PPO.pdf](./Doing_RL_with_PPO.pdf) 입니다.
 
 ## Roboschool 설치 가이드
 
