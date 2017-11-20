@@ -56,6 +56,7 @@ export PKG_CONFIG_PATH=$(dirname $(dirname $(which python)))/lib/pkgconfig
 
 
 그 다음은 roboschool을 돌리는데 필요한 물리엔진인 bullet3를 설치해야 합니다. 먼저 bullet3를 먼저 깃헙에서 받아와서 빌드를 해야합니다.
+** git clone한 roboschool 디렉토리에서 bullet3를 설치해주세요.
 
 ```
 git clone https://github.com/olegklimov/bullet3 -b roboschool_self_collision
